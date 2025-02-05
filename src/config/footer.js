@@ -1,80 +1,32 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/jaydanurwin',
-    icon: "mdi:twitter",
+    name: 'Instagram',
+    url: 'https://www.instagram.com/an.exoticos',
+    icon: "mdi:instagram",
   },
   {
-    name: 'Youtube',
-    url: 'https://youtube.com/@jaydanurwin',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/jaydanurwin',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://astro.build/chat',
-    icon: "ic:baseline-discord",
+    name: 'Whatsapp',
+    url: 'https://l.instagram.com/?u=http%3A%2F%2Fwa.me%2F573003903899%2F%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaYrqcLf3Q4VC89-YxOq855fVezb_XstqFzq7cJxrli-WoCDDfAYQyewilU_aem_m6ATjw8MnPLZeaoN_ySmfw&e=AT1jAawRLZSvme6nz1olaDOSz3NU6RqBYoSHyw-GfGYObkthur5D2nNAddIFtaJ-8odFuLvAY3JjR2nb8xmBiiODFuUKupjOZg4x7eiexmu01Hos6rmSdqU',
+    icon: "mdi:whatsapp",
   },
 ]
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Compañía',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'Quienes somos',
+				slug: '/quienes-somos',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
-	},
-	{
-		title: 'Company',
-		items: [
-			{
-				title: 'About',
-				slug: '/company/about',
+				title: 'Servicios',
+				slug: '/servicios',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'Contacto',
+				slug: '/contacto',
 			},
-			{
-				title: 'Contact',
-				slug: '/company/contact',
-			},
-		],
-	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
 		],
 	},
 ];

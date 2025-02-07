@@ -13,8 +13,8 @@ import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '@components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'AN Exóticos | Clínica Veterinaria Especializada en Mascotas Exóticas - Envigado',
-	description: 'Clínica veterinaria en Envigado especializada en mascotas exóticas. Atención 24/7, consultas especializadas y urgencias para aves, reptiles, roedores y peces. Profesionales expertos en especies no convencionales.',
+	title: 'AN Exóticos | Clínica Veterinaria de Mascotas Exóticas Envigado',
+	description: 'Clínica veterinaria en Envigado especializada en mascotas exóticas. Confía el cuidado de tus aves, reptiles, roedores y peces a nuestros expertos. Atención profesional 24/7 y urgencias. ¡Agenda tu cita!',
 };
 ---
 
@@ -30,18 +30,24 @@ const seo = {
 			<p>Clínica veterinaria especializada en el cuidado integral de mascotas no convencionales.</p>
 		</div>
 		<div slot="btns-container">
-			<!-- TODO: whatsapp button? -->
-			<Button href="/theme/get-started" customIcon
-				>Agendar Cita <Fragment slot="icon">
-					<Icon name="ic:baseline-chevron-right" />
-				</Fragment></Button
+			<Button
+				href="https://wa.me/573003903899"
+				newTab
+				customIcon
 			>
+				Agendar Cita
+				<Fragment slot="icon">
+					<Icon name="ic:baseline-chevron-right" />
+				</Fragment>
+			</Button>
 		</div>
 		<picture slot="image-container">
 			<img
 				src="/assets/images/logo.png"
 				alt="AN Exóticos - Clínica Veterinaria"
 				id="home-hero-image"
+				width="581px"
+				height="581px"
 			/>
 		</picture>
 	</TextAndImageHero>
@@ -53,7 +59,7 @@ const seo = {
 
 	<ThreeColumnTextSection>
 		<div slot="column-1-body">
-			<h2>¿Por Qué Elegirnos?</h2>
+			<h2>¿Por qué Elegirnos?</h2>
 			<p>
 				Somos la única clínica en Envigado especializada exclusivamente en mascotas exóticas.
 				Nuestro equipo está altamente capacitado y apasionado por el cuidado de especies no convencionales.
@@ -77,8 +83,7 @@ const seo = {
 		<Button slot="column-3-cta">Nuestros servicios</Button>
 	</ThreeColumnTextSection>
 
-	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded
-	/>
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded />
 
 	<StickyTextImageSection>
 		<div slot="text-container">
@@ -110,7 +115,7 @@ const seo = {
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/landing-1/landing-sticky.jpg"
+				src="/assets/images/services.webp"
 				alt="Astro Odyssey"
 				loading="lazy"
 			/>
@@ -125,10 +130,11 @@ const seo = {
 		<p>
 			Agenda tu cita ahora y confía el cuidado de tu mascota exótica a profesionales expertos.
 		</p>
-		<Button href="/theme/get-started" customIcon
-			>Contacto <Fragment slot="icon">
+		<Button href="https://wa.me/573003903899" customIcon newTab
+			>Agendar cita <Fragment slot="icon">
 				<Icon name="ic:baseline-chevron-right" />
-			</Fragment></Button
+			</Fragment>
+		</Button
 		>
 	</CtaCardSection>
 </Layout>

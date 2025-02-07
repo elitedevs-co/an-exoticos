@@ -16,8 +16,8 @@ export const footerLists = [
 		title: 'Compañía',
 		items: [
 			{
-				title: 'Quienes somos',
-				slug: '/quienes-somos',
+				title: 'Sobre nosotros',
+				slug: '/sobre-nosotros',
 			},
 			{
 				title: 'Servicios',

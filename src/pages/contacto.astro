@@ -1,0 +1,62 @@
+---
+import MapLocation from '@components/MapLocation.astro';
+import { Container } from '@components/odyssey-theme';
+import Layout from '@layouts/Page.astro';
+
+const seo = {
+	title: 'Contacto | AN Exóticos',
+	description: 'Agenda tu cita veterinaria para mascotas exóticas en Envigado. Atención 24/7, consultas especializadas y urgencias. Contáctanos por WhatsApp al 3003903899',
+};
+---
+
+<Layout seo={seo}>
+	<Container>
+		<section class="contact-hero__section">
+			<div class="contact-hero__text-section">
+				<h1>Contáctanos</h1>
+				<p>
+					Estamos aquí para atender a tu mascota exótica. Contamos con atención veterinaria especializada las 24 horas del día, los 7 días de la semana. Tu confianza es nuestra prioridad.
+				</p>
+				<div>
+					<ul style="list-style: none;">
+						<li><a href="https://wa.me/573003903899" rel="noopener" target="_blank"> 📲 Teléfono: (300) 3903899</a></li>
+						<li><a href="mailto:anexoticos@gmail.com?subject=Hola!" rel="noopener" target="_blank">📧 Email: anexoticos@gmail.com</a></li>
+						<li>⏰ Horario de atención: 24/7 para urgencias</li>
+						<li>📍 Dirección: <a href="https://maps.app.goo.gl/2R2iywDvsFVo69Bb9" rel="noopener" target="_blank">Carrera 42A #40C Sur 121, Zona 7, Envigado, Antioquia</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="col-2__container">
+				<MapLocation />
+			</div>
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: var(--section-margin) auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

@@ -1,0 +1,27 @@
+<div id="map" style="width: 100%; height: 300px;"></div>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+<script>
+  import L from 'leaflet';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const map = L.map('map').setView([6.1675, -75.5830], 17);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // centramos
+    map.flyTo([6.166708, -75.590213], 17);
+
+    // Agregar un marcador
+    const marker = L.marker([6.166708, -75.590213]).addTo(map);
+    marker.bindPopup("<b>AN Exóticos</b><br>Clínica Veterinaria").openPopup();
+  });
+</script>

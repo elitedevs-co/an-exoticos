@@ -1,0 +1,124 @@
+---
+import { Button, CtaCardSection, StickyTextImageSection, TextSection } from '@components/odyssey-theme';
+import Layout from '@layouts/Page.astro';
+import { Icon } from 'astro-icon/components';
+
+const seo = {
+	title: 'Servicios Veterinarios para Mascotas Exóticas | AN Exóticos',
+	description: 'Consulta especializada, urgencias 24/7, cirugías y hospitalización para aves, reptiles, roedores y peces. Atención médica profesional para tu mascota exótica en Envigado.',
+};
+---
+
+<Layout {seo}>
+	<StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Atención 24/7</h2>
+			<p>
+				Nuestro servicio de urgencias veterinarias está disponible las 24 horas, todos los días del año. Contamos con un equipo médico especializado siempre listo para atender cualquier emergencia que pueda presentar tu mascota exótica. Entendemos que las emergencias no tienen horario, por eso mantenemos nuestras instalaciones completamente equipadas y personal de guardia permanente para garantizar atención inmediata cuando más lo necesitas. Ya sea en medio de la noche o durante un día festivo, siempre encontrarás atención profesional para tu mascota.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/24-7.webp"
+				alt="Atención 24/7"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Consulta especializada</h2>
+			<p>
+				Ofrecemos una evaluación integral de tu mascota exótica realizada por veterinarios expertos en especies no convencionales. Nuestras consultas incluyen un examen físico completo, evaluación del comportamiento y hábitat, análisis nutricional y recomendaciones personalizadas según la especie. Realizamos una historia clínica detallada y proporcionamos planes de manejo específicos para cada paciente. Nuestros especialistas están capacitados para atender aves, reptiles, pequeños mamíferos y peces ornamentales, garantizando un enfoque adaptado a las necesidades únicas de cada especie.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/consulta-especializada.webp"
+				alt="Consulta especializada"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Guardería</h2>
+			<p>
+				Brindamos un servicio de guardería especializada donde tu mascota exótica recibirá cuidados profesionales en un ambiente controlado y seguro. Nuestras instalaciones están diseñadas específicamente para diferentes especies, con control de temperatura, humedad y ciclos de luz apropiados. El personal está altamente capacitado en el manejo de especies no convencionales y mantiene una supervisión constante. Incluimos alimentación especializada, monitoreo diario de salud y actividades de enriquecimiento ambiental adaptadas a cada especie.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/guarderia.webp"
+				alt="Guardería"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Charlas virtuales</h2>
+			<p>
+				Facilitamos sesiones educativas en línea diseñadas para propietarios de mascotas exóticas. Nuestros expertos comparten conocimientos esenciales sobre el cuidado adecuado, requerimientos nutricionales, prevención de enfermedades comunes y enriquecimiento ambiental. Las charlas incluyen tiempo para preguntas y respuestas, recursos digitales descargables y acceso a una comunidad de propietarios de mascotas exóticas. Abordamos temas específicos para cada especie y ofrecemos consejos prácticos para mejorar la calidad de vida de tu mascota.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/charlas.webp"
+				alt="Charlas virtuales"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Radiografías y diagnóstico</h2>
+			<p>
+				Contamos con equipos de última generación especialmente adaptados para el diagnóstico de especies exóticas. Nuestro servicio de radiografía digital permite obtener imágenes de alta calidad incluso en pacientes muy pequeños, minimizando el estrés durante el procedimiento. Complementamos el diagnóstico por imagen con análisis de laboratorio, evaluación microscópica y otros métodos diagnósticos específicos para cada especie. Nuestro equipo está capacitado en la interpretación especializada de resultados en especies no convencionales.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/radiografias.webp"
+				alt="Radiografías y diagnóstico"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <StickyTextImageSection>
+		<div slot="text-container">
+			<h2>Urgencias</h2>
+			<p>
+				Ofrecemos atención inmediata para situaciones críticas con protocolos específicos para cada tipo de mascota exótica. Nuestras instalaciones están equipadas con tecnología especializada para el manejo de emergencias, incluyendo equipos de oxigenación, monitoreo vital y estabilización adaptados para especies no convencionales. Contamos con medicamentos específicos y personal entrenado en técnicas de manejo de crisis para diferentes especies. Proporcionamos cuidados intensivos cuando sea necesario y seguimiento detallado de cada caso.
+			</p>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/servicios/urgencias.webp"
+				alt="Urgencias"
+				loading="lazy"
+			/>
+		</picture>
+	</StickyTextImageSection>
+
+  <CtaCardSection
+		background="var(--theme-surface-2)"
+		color="var(--theme-on-surface-2)"
+	>
+		<h2>Atención Veterinaria Especializada</h2>
+		<p>
+			Agenda tu cita ahora y confía el cuidado de tu mascota exótica a profesionales expertos.
+		</p>
+		<Button href="https://wa.me/573003903899" customIcon newTab
+			>Agendar cita <Fragment slot="icon">
+				<Icon name="ic:baseline-chevron-right" />
+			</Fragment>
+		</Button
+		>
+	</CtaCardSection>
+</Layout>

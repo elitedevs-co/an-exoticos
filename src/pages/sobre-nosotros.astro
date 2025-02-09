@@ -1,7 +1,8 @@
 ---
-import { TextSection } from '@components/odyssey-theme';
+import { Button, CtaCardSection, TextSection } from '@components/odyssey-theme';
 import HeroSection from '@components/sections/heros/HeroSection.astro';
 import Layout from '@layouts/Page.astro';
+import { Icon } from 'astro-icon/components';
 
 const seo = {
 	title: 'Equipo Veterinario Especializado | AN Exóticos',
@@ -19,7 +20,7 @@ const seo = {
 		</div>
     <picture slot="image-container">
       <img
-        src="/assets/images/team.webp"
+        src="/assets/images/sobre-nosotros/team.webp"
         alt="Equipo de AN Exóticos"
         id="home-hero-image"
       />
@@ -47,58 +48,72 @@ const seo = {
 
   <hr style="width: 80%;" />
 
-  <section class="team">
-    <HeroSection>
-      <picture slot="image-container">
-        <img
-          src="/assets/images/andres.webp"
-          alt="Dr. Andrés Barbosa Muñoz"
-          width="400px"
-          height="400px"
-          style="object-fit: contain;"
-        />
-      </picture>
+  <HeroSection>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/sobre-nosotros/andres.webp"
+        alt="Dr. Andrés Barbosa Muñoz"
+        width="400px"
+        height="400px"
+        style="object-fit: contain;"
+      />
+    </picture>
 
-      <div slot="text-container">
-        <h3>Dr. Andrés Barbosa Muñoz</h3>
-        <a href="https://www.instagram.com/abarbosavet/" rel="noopener" target="_blank">@abarbosavet</a>
-        <p>
-          <ul>
-            <li>Médico veterinario y Zootecnista de la universidad CES.</li>
-            <li>Magister en medicina interna de pequeñas especies animales con énfasis en anestesia veterinaria.</li>
-            <li>Especialista en animales exóticos y silvestres: Manejo, clínica y cría en cautividad de la universidad complutense de Madrid.</li>
-            <li>Docente de pregrado y posgrado en medicina de animales exóticos.</li>
-            <li>Co-fundador y director médico de AN Exóticos Clínica Veterinaria.</li>
-            <li>9 años de experiencia en medicina interna, cirugía y anestesia de mascotas no convencionales y animales silvestres.</li>
-          </ul>  
-        </p>
-      </div>
-    </HeroSection>
+    <div slot="text-container">
+      <h3>Dr. Andrés Barbosa Muñoz</h3>
+      <a href="https://www.instagram.com/abarbosavet/" rel="noopener" target="_blank">@abarbosavet</a>
+      <p>
+        <ul>
+          <li>Médico veterinario y Zootecnista de la universidad CES.</li>
+          <li>Magister en medicina interna de pequeñas especies animales con énfasis en anestesia veterinaria.</li>
+          <li>Especialista en animales exóticos y silvestres: Manejo, clínica y cría en cautividad de la universidad complutense de Madrid.</li>
+          <li>Docente de pregrado y posgrado en medicina de animales exóticos.</li>
+          <li>Co-fundador y director médico de AN Exóticos Clínica Veterinaria.</li>
+          <li>9 años de experiencia en medicina interna, cirugía y anestesia de mascotas no convencionales y animales silvestres.</li>
+        </ul>  
+      </p>
+    </div>
+  </HeroSection>
 
-    <hr style="width: 80%" />
+  <hr style="width: 80%" />
 
-    <HeroSection>
-      <div slot="text-container">
-        <h3>Dr. Nicolas Jaramillo Bedoya</h3>
-        <a href="https://www.instagram.com/nicolasjlloexoticos/" rel="noopener" target="_blank">@nicolasjlloexoticos</a>
-        <p>
-          <ul>
-            <li>Médico veterinario y Zootecnista de la universidad CES.</li>
-            <li>Especialista en animales exóticos y silvestres: Manejo, clínica y cría en cautividad de la universidad complutense de Madrid.</li>
-            <li>Co-fundador y director médico de AN Exóticos Clínica Veterinaria.</li>
-            <li>Diplomado en cirugía de tejidos blandos unilasallista.</li>
-            <li>Diplomado en emergencias y cuidados críticos universidad CES.</li>
-          </ul>  
-        </p>
-      </div>
-  
-      <picture slot="image-container">
-        <img
-          src="/assets/images/nicolas.webp"
-          alt="Dr. Nicolas Jaramillo Bedoya"
-          style="object-fit: contain;"
-        />
-      </picture>
-    </HeroSection>
-  </section>
+  <HeroSection>
+    <div slot="text-container">
+      <h3>Dr. Nicolas Jaramillo Bedoya</h3>
+      <a href="https://www.instagram.com/nicolasjlloexoticos/" rel="noopener" target="_blank">@nicolasjlloexoticos</a>
+      <p>
+        <ul>
+          <li>Médico veterinario y Zootecnista de la universidad CES.</li>
+          <li>Especialista en animales exóticos y silvestres: Manejo, clínica y cría en cautividad de la universidad complutense de Madrid.</li>
+          <li>Co-fundador y director médico de AN Exóticos Clínica Veterinaria.</li>
+          <li>Diplomado en cirugía de tejidos blandos unilasallista.</li>
+          <li>Diplomado en emergencias y cuidados críticos universidad CES.</li>
+        </ul>  
+      </p>
+    </div>
+
+    <picture slot="image-container">
+      <img
+        src="/assets/images/sobre-nosotros/nicolas.webp"
+        alt="Dr. Nicolas Jaramillo Bedoya"
+        style="object-fit: contain;"
+      />
+    </picture>
+  </HeroSection>
+
+  <CtaCardSection
+    background="var(--theme-surface-2)"
+    color="var(--theme-on-surface-2)"
+  >
+    <h2>Atención Veterinaria Especializada</h2>
+    <p>
+      Agenda tu cita ahora y confía el cuidado de tu mascota exótica a profesionales expertos.
+    </p>
+    <Button href="https://wa.me/573003903899" customIcon newTab
+      >Agendar cita <Fragment slot="icon">
+        <Icon name="ic:baseline-chevron-right" />
+      </Fragment>
+    </Button
+    >
+  </CtaCardSection>
 </Layout>
